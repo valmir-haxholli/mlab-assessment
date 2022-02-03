@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  background-color: #d6e2f0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 100%;
+  font-family: "Outfit", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.card__container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.card {
+  width: 320px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 0 8px rgba(30, 30, 30, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
 }
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card__title {
+  text-align: center;
+  transition: padding 0.3s;
+}
+
+.card__title h1 {
+  font-size: 1.3rem;
+  color: #1f3251;
+  margin: 20px 0;
+  min-height: 100px;
+}
+
+.card img {
+  border-radius: 20px;
+}
+
+.card__title p {
+  color: #7b879d;
+  font-size: 1rem;
+  font-weight: 400;
+} 
+
+
