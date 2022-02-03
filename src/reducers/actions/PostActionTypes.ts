@@ -2,6 +2,12 @@ export const POST_LOADING = "POST_LOADING";
 export const POST_FAIL = "POST_FAIL";
 export const POST_SUCCESS = "POST_SUCCESS";
 
+export type PostType = {
+    id: number,
+    title: string,
+    body: string
+}
+
 interface PostLoading {
     type: typeof POST_LOADING
 }
@@ -12,5 +18,9 @@ interface PostFailed {
 
 interface PostSuccess {
     type: typeof POST_SUCCESS,
-    paylod: 
+    payload: {
+        posts: PostType
+    }
 }
+
+export type PostDispatchTypes = PostLoading | PostFailed | PostSuccess
