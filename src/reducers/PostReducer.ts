@@ -24,6 +24,8 @@ const postReducer = (state: DefaultStateI = defaultState, action: PostDispatchTy
                 loading: false,
                 post: action.payload
             }
+        default: 
+            return state;
     }
 }
 
